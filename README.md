@@ -15,7 +15,7 @@ Features:
   
   </li>
   <li> sqft_living: </li>
-  <li> sqft_lot </li>
+  <li> sqft_lot: Tamaño del terreno en pie cuadrado </li>
   <li> floors: Cantidad de pisos </li>
   <li> waterfront </li>
   <li> view </li>
