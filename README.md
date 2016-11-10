@@ -7,7 +7,23 @@ Con el objetivo de afianzar los conocimientos sobre machine learning, seleccion�
 # Dataset
 Features:
 <ul>
-<li>bedrooms</li>
-<li>bathrooms</li>
-,sqft_living,sqft_lot,floors,waterfront,view,condition,grade,sqft_above,sqft_basement,yr_built,yr_renovated,zipcode,lat,long,sqft_living15,sqft_lot15,price
+  <li> bedrooms: Catidad de Habitaciones</li>
+  <li> bathrooms: Cantidad de baños.</li>
+  <li> sqft_living: </li>
+  <li> sqft_lot </li>
+  <li> floors: Cantidad de pisos </li>
+  <li> waterfront </li>
+  <li> view </li>
+  <li> condition </li>
+  <li> grade </li>
+  <li> sqft_above </li>
+  <li> sqft_basement </li>
+  <li> yr_built </li>
+  <li> yr_renovated </li>
+  <li> zipcode: Código Postal </li>
+  <li> lat: Coordenadas - Latitud </li>
+  <li> long Coordenadas - Longitud </li>
+  <li> sqft_living15 </li>
+  <li> sqft_lot15 </li>
+  <li> price: Precio en dólares </li>
 </ul>
