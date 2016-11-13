@@ -14,7 +14,7 @@ Features:
         Según Wikipedia: <blockquote cite="https://en.wikipedia.org/wiki/Bathroom#Terminology_in_the_United_States">In the United States, bathrooms are generally categorized as master bathroom, containing a varied shower [2] and a tub that is adjoining to a master bedroom, a "full bathroom" (or "full bath"), containing four plumbing fixtures: bathtub/shower, or (separate shower), toilet, and sink; "half (1/2) bath" (or "powder room") containing just a toilet and sink; and "3/4 bath" containing toilet, sink, and shower...<blockquote>
   
   </li>
-  <li> sqft_living: </li>
+  <li> sqft_living: Tamaño del living en pie cuadrado</li>
   <li> sqft_lot: Tamaño del terreno en pie cuadrado </li>
   <li> floors: Cantidad de pisos </li>
   <li> waterfront </li>
