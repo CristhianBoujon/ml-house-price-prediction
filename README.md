@@ -49,7 +49,9 @@ Features:
 <h2>Un poco de conceptos </h2>
 Realicé un proceso de tres pasos para determinar el modelo. Básicamente lo que intento es determinar si el modelo sufre de <b>overfitting</b> o <b>underfitting</b> o si está bien equilibrado.
 
+
 <img src="https://s15.postimg.org/bbt6a5m97/t0zit.png"></img>
+<br />
 Imagen extraída del curso dictado por Andrew Ng en <a href="https://www.coursera.org/learn/machine-learning">Coursera</a>
 
 <h3>¿Cómo identificar Overfitting?</h3>
@@ -79,4 +81,11 @@ python 2-polynomical_d2.py
 <pre>
 0.830028882046 0.00291291406115
 0.812813894177 0.0244860601912
+</pre>
+Podemos ver que la performance aumentó significativamente, tanto en para los datos de entrenamiento como los de test, por lo que, en principo, es una buena idea adoptar éste modelo polinómico.
+
+<h2>3-polynomical_d3.py</h2>
+Para ver si podemos mejorar aún más al performance, aumentaremos un grado más aún.
+<pre>
+python 3-polynomical_d3.py 
 </pre>
