@@ -50,3 +50,8 @@ Realicé un proceso de tres pasos para determinar el modelo.
 
 <h2>1-linear_regression.py </h2>
 Siempre es recomendable comenzar por lo más sencillo y si no da resultado, ir aumentando la complejidad, es por ésto que comencé con el  script "1-linear_regression.py", en el cual hice una primera prueba para determinar que tan bien se ajusta el dataset a un modelo lineal. Ésto nos dará una pauta de cuales son los pasos a seguir.
+Como resultado obtenemos:
+<pre>
+0.699828185572 0.00254130401921
+0.697014788003 0.0205903110921
+</pre>
