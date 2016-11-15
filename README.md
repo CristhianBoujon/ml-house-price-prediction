@@ -46,6 +46,7 @@ Features:
 <b>Nota: </b> El archivo kc_house_data_orginal.csv es el dataset original, el cual contiene las columnas "id" que es un identificador único de cada registro y la columna "date" que es la fecha en la que se realizó el registro. Éstas columnas fueron quitadas ya que no aportan ningún valor al modelo.
 
 # Proceso
-<h2>1-linear_regression.py </h2>
 Realicé un proceso de tres pasos para determinar el modelo.
+
+<h2>1-linear_regression.py </h2>
 Siempre es recomendable comenzar por lo más sencillo y si no da resultado, ir aumentando la complejidad, es por ésto que comencé con el  script "1-linear_regression.py", en el cual hice una primera prueba para determinar que tan bien se ajusta el dataset a un modelo lineal. Ésto nos dará una pauta de cuales son los pasos a seguir.
