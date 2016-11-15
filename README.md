@@ -48,10 +48,9 @@ Features:
 # Proceso
 <h2>Un poco de conceptos </h2>
 Realicé un proceso de tres pasos para determinar el modelo. Básicamente lo que intento es determinar si el modelo sufre de <b>overfitting</b> o <b>underfitting</b> o si está bien equilibrado.
-<figure>
-  <img src="https://s15.postimg.org/bbt6a5m97/t0zit.png" />
-  <figcaption>Imagen extraída del curso dictado por Andrew Ng en <a href="https://www.coursera.org/learn/machine-learning">Coursera</a>   </figcaption>
-</figure>
+
+<img src="https://s15.postimg.org/bbt6a5m97/t0zit.png"></img>
+Imagen extraída del curso dictado por Andrew Ng en <a href="https://www.coursera.org/learn/machine-learning">Coursera</a>
 
 <h3>¿Cómo identificar Overfitting?</h3>
 Overfitting (Sobreajuste) significa que nuestro modelo se ajusta demasiado a los datos de entrenamiento, tanto así, que pierde la capacidad de generalización y por lo tanto, no funcionará correctamente cuando el modelo se ponga a prueba con datos de test. Por lo tanto, si la performance de nuestro modelo es alta en los datos de entrenamiento y la performance es baja en los datos de test, entonces estamos en presencia de overfitting.
