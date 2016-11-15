@@ -46,12 +46,35 @@ Features:
 <b>Nota: </b> El archivo kc_house_data_orginal.csv es el dataset original, el cual contiene las columnas "id" que es un identificador único de cada registro y la columna "date" que es la fecha en la que se realizó el registro. Éstas columnas fueron quitadas ya que no aportan ningún valor al modelo.
 
 # Proceso
-Realicé un proceso de tres pasos para determinar el modelo.
+<h2>Un poco de conceptos </h2>
+Realicé un proceso de tres pasos para determinar el modelo. Básicamente lo que intento es determinar si el modelo sufre de <b>overfitting</b> o <b>underfitting</b> o si está bien equilibrado.
+<img src="https://s15.postimg.org/bbt6a5m97/t0zit.png"></img>
+
+<h3>¿Cómo identificar Overfitting?</h3>
+Overfitting (Sobreajuste) significa que nuestro modelo se ajusta demasiado a los datos de entrenamiento, tanto así, que pierde la capacidad de generalización y por lo tanto, no funcionará correctamente cuando el modelo se ponga a prueba con datos de test. Por lo tanto, si la performance de nuestro modelo es alta en los datos de entrenamiento y la performance es baja en los datos de test, entonces estamos en presencia de overfitting.
+
+<h3>¿Cómo identificar Underfitting?</h3>
+Underfitting quiere decir que el modelo elegido no se ajusta suficientemente bien a los datos. Dicho de otra manera, el modelo planteado es demasiado simple. Por ejemplo, un modelo lineal, como una recta, pero los datos se comportan de manera logarítmica. Por lo tanto, si la performance de nuestro modelo es baja en los datos de entrenamiento y la performance es baja en los datos de test, entonces estamos en presencia de underfitting
 
 <h2>1-linear_regression.py </h2>
 Siempre es recomendable comenzar por lo más sencillo y si no da resultado, ir aumentando la complejidad, es por ésto que comencé con el  script "1-linear_regression.py", en el cual hice una primera prueba para determinar que tan bien se ajusta el dataset a un modelo lineal. Ésto nos dará una pauta de cuales son los pasos a seguir.
 Como resultado obtenemos:
 <pre>
+python 1-linear_regression.py
+</pre>
+<pre>
 0.699828185572 0.00254130401921
 0.697014788003 0.0205903110921
+</pre>
+
+Dado que la performance de las predicciones sobre los mismos datos que se utilizaron para el entrenamiento (0.699828185572) es casi igual a la performance de las predicciones de datos nuevos para el modelo (datos que no se utilizaron para el entrenamiento) (0.697014788003) y es un valor relativamente bajo, podemos suponer que el modelo aún no se ajusta lo suficientemente bien a nuestros datos, por lo que estamos en un escenario de <b>underfitting</b>.
+
+<h2>2-polynomical_d2.py </h2>
+Una manera de de probar si podemos mejorar la performance, es probar con un modelo polinómico de mayor grado, es decir, en éste caso, elevando todas nuestras variables al cuadrado.
+<pre>
+python 2-polynomical_d2.py 
+</pre>
+<pre>
+0.830028882046 0.00291291406115
+0.812813894177 0.0244860601912
 </pre>
