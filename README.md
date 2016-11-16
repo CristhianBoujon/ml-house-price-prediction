@@ -6,17 +6,17 @@ El dataset utilizado es el que se encuentra en el archivo kc_house_data.csv.
 
 Features:
 <ul>
-  <li> bedrooms: Catidad de Habitaciones</li>
+  <li> bedrooms: Catidad de Habitaciones. </li>
   <li> bathrooms: Cantidad de baños. 
         <br />
         <b>Aclaración:</b> En el dataset podrán observar que algunos ejemplos son decimales y no enteros (Ver segundo ejemplo, donde      bathrooms = 2.25). 
         Según Wikipedia: <blockquote cite="https://en.wikipedia.org/wiki/Bathroom#Terminology_in_the_United_States">In the United States, bathrooms are generally categorized as master bathroom, containing a varied shower [2] and a tub that is adjoining to a master bedroom, a "full bathroom" (or "full bath"), containing four plumbing fixtures: bathtub/shower, or (separate shower), toilet, and sink; "half (1/2) bath" (or "powder room") containing just a toilet and sink; and "3/4 bath" containing toilet, sink, and shower...</blockquote>
   
   </li>
-  <li> sqft_living: Tamaño del living en pie cuadrado</li>
-  <li> sqft_lot: Tamaño del terreno en pie cuadrado </li>
-  <li> floors: Cantidad de pisos </li>
-  <li> waterfront: si la casa tiene vista al río. 0 = No / 1 = Si </li>
+  <li> sqft_living: Tamaño del living en pie cuadrado. </li>
+  <li> sqft_lot: Tamaño del terreno en pie cuadrado. </li>
+  <li> floors: Cantidad de pisos. </li>
+  <li> waterfront: si la casa tiene vista al río. 0 = No / 1 = Si. </li>
   <li> view </li>
   <li> 
       condition: Puntaje 1-5 que indica en qué condición/estado se encuentra la casa.
@@ -28,14 +28,28 @@ Features:
         <li>5 = Muy Buena</li>
       </ul>
   </li>
-  <li> grade: Representa la calidad de la construcción </li>
+  <li> 
+    grade: Representa la calidad de la construcción. 
+    <ul type="1">
+      <li>1 = Por debajo de los estándares mínimos de construcción.</li>
+      <li>2 = Por debajo de los estándares mínimos de construcción.</li>
+      <li>3 = Por debajo de los estándares mínimos de construcción.</li>
+      <li>4 = Construcción vieja y de baja calidad.</li>
+      <li>5 = Bajos costes de construcción y mano de obra. Diseño pequeño y sencillo.</li>
+      <li>6 = Cumple con los estándares mínimos de construcción. Baja calidad de materiales.</li>
+      <li>7 = Promedio calidad de construcción y diseño.</li>
+      <li>8 = Por encima del promedio en construcción y diseño. Buenos materiales tanto en el interior como en el exterior.</li>
+      <li>9 = Diseño personalizado/a medida, .</li>
+      <li>10 = Por debajo de los estándares mínimos de construcción.</li>
+    </ul>
+  </li>
   <li> sqft_above </li>
-  <li> sqft_basement: Tamaño del sótano en pie cuadrado </li>
+  <li> sqft_basement: Tamaño del sótano en pie cuadrado. </li>
   <li> yr_built: Año de la consutrucción de la casa. </li>
   <li> yr_renovated: Año en que se hicieron mejoras significativas en la casa. </li>
   <li> zipcode: Código Postal </li>
-  <li> lat: Coordenadas - Latitud </li>
-  <li> long Coordenadas - Longitud </li>
+  <li> lat: Coordenadas - Latitud. </li>
+  <li> long Coordenadas - Longitud. </li>
   <li> sqft_living15: Tamaño promedio del living de las 15 casas más cerca en pie cuadrado. </li>
   <li> sqft_lot15: Tamaño promedio del terreno de las 15 casas más cerca en pie cuadrado. </li>
   <li> price: Precio en dólares </li> 
@@ -73,22 +87,22 @@ Dado que la performance de las predicciones sobre los mismos datos que se utiliz
 <h2>2-polynomical_d2.py </h2>
 Una manera de de probar si podemos mejorar la performance, es probar con un modelo polinómico de mayor grado, es decir, en éste caso, elevando todas nuestras variables al cuadrado.
 <pre>
-python 2-polynomical_d2.py 
+  python 2-polynomical_d2.py 
 </pre>
 <pre>
-0.830028882046 0.00291291406115
-0.812813894177 0.0244860601912
+  0.830028882046 0.00291291406115
+  0.812813894177 0.0244860601912
 </pre>
 Podemos ver que la performance aumentó significativamente, tanto en para los datos de entrenamiento como los de test, por lo que, en principo, es una buena idea adoptar éste modelo polinómico.
 
 <h2>3-polynomical_d3.py</h2>
 Para ver si podemos mejorar aún más al performance, aumentaremos un grado más aún, es decir que elevaremos al cubo cada variable.
 <pre>
-python 3-polynomical_d3.py 
+  python 3-polynomical_d3.py 
 </pre>
 <pre>
-0.902972786233 0.00198889028091
--46748368.4718 88719438.1422
+  0.902972786233 0.00198889028091
+  -46748368.4718 88719438.1422
 </pre>
 Se puede observar que la performance del modelo sobre los datos de entrenamiento ha sido aún mejor (0.902972786233) con respecto al paso anterior, pero definitivamente ha sido muy mala la performance sobre los datos nuevos para el modelo (-46748368.4718). Éste es el caso en donde nos encontramos en un escenario de <b>overfitting</b>.
 
