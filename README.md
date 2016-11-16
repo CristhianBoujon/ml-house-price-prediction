@@ -17,7 +17,7 @@ Features:
   <li> sqft_lot: Tamaño del terreno en pie cuadrado. </li>
   <li> floors: Cantidad de pisos. </li>
   <li> waterfront: si la casa tiene vista al río. 0 = No / 1 = Si. </li>
-  <li> view </li>
+  <li> view: Puntaje entre 0 - 4 de la vista de la casa. </li>
   <li> 
       condition: Puntaje 1-5 que indica en qué condición/estado se encuentra la casa.
       <ul>
@@ -46,7 +46,7 @@ Features:
       <li>13 = Por lo general diseñado y construido a medida. Nivel de mansión. Acabado de madera, mármol, formas de entrada, etc</li>
     </ul>
   </li>
-  <li> sqft_above </li>
+  <li> sqft_above: Espacio interior de la vivienda que está sobre el nivel del suelo en pie cuadrado. </li>
   <li> sqft_basement: Tamaño del sótano en pie cuadrado. </li>
   <li> yr_built: Año de la consutrucción de la casa. </li>
   <li> yr_renovated: Año en que se hicieron mejoras significativas en la casa. </li>
