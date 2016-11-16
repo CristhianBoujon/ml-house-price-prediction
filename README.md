@@ -85,7 +85,15 @@ python 2-polynomical_d2.py
 Podemos ver que la performance aumentó significativamente, tanto en para los datos de entrenamiento como los de test, por lo que, en principo, es una buena idea adoptar éste modelo polinómico.
 
 <h2>3-polynomical_d3.py</h2>
-Para ver si podemos mejorar aún más al performance, aumentaremos un grado más aún.
+Para ver si podemos mejorar aún más al performance, aumentaremos un grado más aún, es decir que elevaremos al cubo cada variable.
 <pre>
 python 3-polynomical_d3.py 
 </pre>
+<pre>
+0.902972786233 0.00198889028091
+-46748368.4718 88719438.1422
+</pre>
+Se puede observar que la performance del modelo sobre los datos de entrenamiento ha sido aún mejor (0.902972786233) con respecto al paso anterior, pero definitivamente ha sido muy mala la performance sobre los datos nuevos para el modelo (-46748368.4718). Éste es el caso en donde nos encontramos en un escenario de <b>overfitting</b>.
+
+# Conclusión
+Pasamos un modelo con underfitting, lo mejoramos cambiandolo por un modelo polinómico de grado 2 y finalmente evaluamos un modelo polinómico de grado 3, en el cual vimos que caemos en overfitting, por lo tanto, de los tres modelos planteados, el ganador es el segundo. Se puede seguir probando como mejorar el mismo, pero sabemos que aumentar los grados del polinomio no es una opción.
