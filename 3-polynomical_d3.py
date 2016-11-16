@@ -4,7 +4,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn import model_selection
 import pandas as pd
 import numpy as np
-from sklearn.metrics import mean_squared_error, r2_score
 
 df = pd.read_csv('kc_house_data.csv')
 data = df.values
@@ -12,14 +11,14 @@ data = df.values
 X = data[:, :data.shape[1] - 1]
 y = data[:, -1]
 
-kfold = model_selection.KFold(n_splits = 10, shuffle = True)
+kfold = model_selection.KFold(n_splits = 10, shuffle = True, random_state = 5)
 
-test_scores, train_scores, test_rmse, train_rmse = np.array([]), np.array([]), np.array([]), np.array([])
+test_scores, train_scores = np.array([]), np.array([])
 
 for train_index, test_index in kfold.split(X):
 
 	lr = LinearRegression(normalize=True)
-	polynomial_features = PolynomialFeatures(degree=2, include_bias = False)
+	polynomial_features = PolynomialFeatures(degree=3, include_bias = False)
 
 	model = Pipeline([	("polynomial_features", polynomial_features),
                         ("linear_regression", lr)])
@@ -28,18 +27,11 @@ for train_index, test_index in kfold.split(X):
 
 	model.fit(X_train, y_train)
 
-	y_train_pred = model.predict(X_train)
-	y_test_pred = model.predict(X_test)
-
-	train_scores = np.append(train_scores, r2_score(y_train, y_train_pred))
-	test_scores = np.append(test_scores, r2_score(y_test, y_test_pred))
-	test_rmse = np.append(test_rmse, mean_squared_error(y_test, y_test_pred)**0.5)
-	train_rmse = np.append(train_rmse, mean_squared_error(y_train, y_train_pred)**0.5)
-
-	y_train_pred = model.predict(X_train)
+	train_scores = np.append(train_scores, model.score(X_train, y_train))
+	test_scores = np.append(test_scores, model.score(X_test, y_test))
 
 
-print train_scores.mean(), train_rmse.mean()
-print test_scores.mean(), test_rmse.mean()
+print train_scores.mean(), train_scores.std()
+print test_scores.mean(), test_scores.std()
 
 
