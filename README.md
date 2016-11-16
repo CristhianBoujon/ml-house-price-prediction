@@ -30,7 +30,7 @@ Features:
   </li>
   <li> 
     grade: Representa la calidad de la construcción. 
-    <ul type="1">
+    <ul>
       <li>1 = Por debajo de los estándares mínimos de construcción.</li>
       <li>2 = Por debajo de los estándares mínimos de construcción.</li>
       <li>3 = Por debajo de los estándares mínimos de construcción.</li>
@@ -39,8 +39,11 @@ Features:
       <li>6 = Cumple con los estándares mínimos de construcción. Baja calidad de materiales.</li>
       <li>7 = Promedio calidad de construcción y diseño.</li>
       <li>8 = Por encima del promedio en construcción y diseño. Buenos materiales tanto en el interior como en el exterior.</li>
-      <li>9 = Diseño personalizado/a medida, .</li>
-      <li>10 = Por debajo de los estándares mínimos de construcción.</li>
+      <li>9 = Mejor diseño arquitectónico, tanto interior como exterior.</li>
+      <li>10 = Por debajo de los estándares mínimos de construcción. Casas espaciosas</li>
+      <li>11 = Diseño personalizado y acabado de calidad superior con complementos de madera, accesorios de baño y opciones más lujosas.</li>
+      <li>12 = Diseño personalizado y excelentes constructores. Todos los materiales son de la más alta calidad y todas las comodidades están presentes.</li>
+      <li>13 = Por lo general diseñado y construido a medida. Nivel de mansión. Acabado de madera, mármol, formas de entrada, etc</li>
     </ul>
   </li>
   <li> sqft_above </li>
